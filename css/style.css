@@ -1,0 +1,737 @@
+* {
+	box-sizing: border-box;
+/*   border: solid teal;
+  margin: 10px; */
+}
+p {
+	font-family: Poppins;
+	font-size: 1vw;
+	font-weight: 400;
+	line-height: 2vw;
+  color: #7c7c7c;
+}
+article, header, footer  {
+  padding: 0 15vw;
+}
+article {
+  margin: 8vh 0;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome {
+	color: #7c7c7c;
+	font-family: Poppins;
+	font-size: 0.95vw;
+	font-weight: 300;
+}
+.email {
+	color: #38ada9;
+	font-family: Poppins;
+	font-size: 0.95vw;
+	font-weight: 400;
+}
+.header-logo {
+	color: #38ada9;
+	font-family: Poppins;
+	font-size: 3vw;
+	font-weight: 900;
+}
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-header * {
+  display:inline;
+}
+nav li {
+  color: #7c7c7c;
+  font-family: Poppins;
+  font-size: 1vw;
+  font-weight: 500;
+}
+nav .active-nav {
+  color: #38ada9;
+}
+
+
+.opening-background {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+}
+.background {
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;  
+  position: relative;
+  z-index: -1;
+}
+.opening-background .overlay {
+  background-image: linear-gradient(254deg, #38ada9 0%, #093e3c 100%);
+  opacity: 0.7;
+}
+.overlay {
+  grid-row: 1 / span 1;
+  grid-column: 1 /span 1;
+  position: relative;
+  z-index: -1;
+}
+.opening {  
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.opening h1 {
+  width: 50vw;
+	color: #ffffff;
+	font-family: Poppins;
+	font-size: 3vw;
+	font-weight: 500;
+	line-height: 6vw;
+}
+.opening p {
+	width: 40vw;
+  color: #ffffff;
+}
+.opening button, .banner button{
+	color: #38ada9;
+  background: white;
+}
+button {
+	font-family: Poppins;
+	font-size: 1vw;
+	font-weight: 500;
+  border-radius: 4vw;
+  padding: 1vw 2vw;
+  border: none;
+}
+
+
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.why-choose-us .divider div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+	color: #38ada9;
+	font-family: Poppins;
+	font-size: 2.3vw;
+	font-weight: 500;
+  text-align: center;
+}
+.why-choose-us .icon {
+	/*background-image: url("img/why-choose-us1.svg");*/
+	background-color: #38ada9;
+	height: 10vw;
+  width: 10vw;
+	border-radius: 50%;
+}
+h3 {
+  color: #38ada9;
+  font-family: Poppins;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+.why-choose-us p, .pricing-tables p, .meet-our-team p, .testimonials p {
+  text-align: center;
+}
+
+
+.cleaning-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+.cleaning-services .divider>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 1vw;
+}
+.square-img {  
+  background-position: center center;
+  background-size: cover;
+}
+.residential, .commercial, .office, .seasonal {
+  height: 15vw;
+  width: 15vw;
+  background-image: url("https://www.fillmurray.com/g/900/900");
+}
+.cleaning-services button, header button, .about-us button {
+  color: white;
+  background-color: #38ada9;
+}
+
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+}
+.about-us #about-us-pic {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-size: cover;
+  background-position: center center;
+}
+.about-us h4 {
+  color: #7c7c7c;
+  font-family: Poppins;
+  font-size: 1.2vw;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+}
+.about-us h2 {  
+  margin: 0;
+}
+.about-us .divider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-us .divider div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3vw 1fr;
+}
+.about-us .divider div h3 {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  margin: 0;
+}
+.about-us .divider div p {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  margin: 0;
+}
+.about-us .icon {
+  height: 2vw;
+  width: 2vw;
+  grid-row: 1 / span 2;
+  background: teal;
+}
+
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38ada9;
+}
+.banner h2 {
+  font-weight: 400;
+  color: white;
+}
+
+
+
+.meet-our-team .divider>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meet-our-team .profile-pic {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-size: cover;
+  background-position: center center;
+	height: 15vw;
+  width: 15vw;
+	border-radius: 50%;
+}
+.meet-our-team h3 {
+  text-align: center;
+}
+.meet-our-team a {
+  color: #7c7c7c;
+}
+
+
+.pricing-tables {
+  background-color: #fafafa;
+}
+.pricing-tables .divider>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-tables .icon {
+	/*background-image: url("img/why-choose-us1.svg");*/
+	background-color: #38ada9;
+	height: 5vw;
+  width: 5vw;
+	border-radius: 50%;
+}
+.pricing-tables h4 {
+  color: #7c7c7c;
+  font-family: Poppins;
+  font-size: 2.5vw;
+  font-weight: 500; 
+}
+.pricing-tables button, .testimonials button {
+/*   width: 100%; */
+  border-radius: 0;
+  color: white;
+  background-color: #38ada9;
+}
+
+
+.latest-blog .divider>div{
+  margin: 0 1vw;  
+}
+.blog-1, .blog-2, .blog-3 {  
+  background-image: url("https://www.fillmurray.com/g/900/900");  
+  height: 20vw;
+  width: 100%;
+}
+.latest-blog h4 {
+  color: #3e3e3e;
+  font-family: Poppins;
+  font-size: 1vw;
+  font-weight: 600;
+  font-style: italic;
+}
+.latest-blog .icon {
+  height: 3vw;
+  width: 3vw;
+  background-color: #9b9b9b;
+  border-radius: 100%;
+  display: inline;
+  margin: 0;
+}
+.latest-blog .author-block {
+  display: grid;
+  grid-template-columns: 4vw 1fr;
+}
+.author-block p{
+  margin: 0;
+}
+.blog-author {
+  color: #3e3e3e;
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+.testimonials {
+  background-color: #fafafa;
+}
+.testimonials .divider {
+  justify-content: center;
+}
+.testimonials .divider div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .profile-pic {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-size: cover;
+  background-position: center center;
+	height: 10vw;
+  width: 10vw;
+	border-radius: 50%;
+}
+.testimonials p, .testimonials button {
+  font-style: italic;
+}
+.testimonials button {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+
+.our-projects .divider-our-projects {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  position: relative;
+}
+.our-projects .divider div {
+/*   background-color: red; */
+}
+.our-projects p {
+  color: white;
+}
+.our-projects .active {
+  background-color: #278d89;
+  opacity: 0.81;
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 2;
+/*   center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-arrows {
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 0 2vw;
+}
+.scroll-arrows div {  
+  opacity: 0.81;
+  background-color: #278d89;
+  border-radius: 50%;
+  height: 3vw;
+  width: 3vw;
+  color: white;
+  font-height: 1vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proj-1 {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-position: center center;
+  background-size: cover;
+  height: 20vw;
+  grid-row: 1;
+  grid-column: 1;
+}
+.proj-2 {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-position: center center;
+  background-size: cover;
+  height: 20vw;
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 2;
+}
+.proj-3 {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-position: center center;
+  background-size: cover;
+  height: 20vw;
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 3;
+}
+.proj-4 {
+  background-image: url("https://www.fillmurray.com/g/900/900");
+  background-position: center center;
+  background-size: cover;
+  height: 20vw;
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 4;
+}
+.our-projects img {
+  height: 15vw;
+  
+}
+
+
+.get-an-instant-quote-background {
+  background-image: url("https://www.fillmurray.com/900/900");
+}
+.get-an-instant-quote-background .overlay {
+  background-color: #434343;
+  opacity: 0.67;
+}
+.get-an-instant-quote-background div {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+.get-an-instant-quote-background .form-div {
+  margin: 5vw 15vw 5vw 50vw;
+  padding: 2vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-div h1, footer h1 {
+  color: #38ada9;
+  font-family: Poppins;
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+input {
+  border: none;
+  background-color: #ededed;
+  padding: 1.5vw;
+  margin: 1vw;
+  color: #9b9b9b;
+  font-family: Poppins;
+  font-size: 1vw;
+  font-weight: 300;
+  font-style: italic;
+  width: 25vw;
+}
+input.message {
+  padding-bottom: 15vw;
+}
+input.send-message {
+  background-color: #38ada9; 
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background-color: #fafafa;
+  grid-gap: 1vw;
+}
+footer h2 {
+  color: #5c5c5c;
+  font-size: 1vw;
+  font-weight: 700;
+  text-align: left;
+}
+.fa {
+  font-size: 1vw;
+  text-align: center;
+  text-decoration: none;
+  color: #38ada9;
+}
+
+
+@media screen and (max-width: 576px) {
+  article, header, footer  {
+  padding: 0 2vw;
+  }
+  .hidden-mobile {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  p {    
+    font-size: 4vw;
+    line-height: 6vw;
+  }  
+  h2 {
+    font-size: 8vw;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  button {
+    font-size: 4vw;
+    border-radius: 4vw;
+    padding-left: 4vw;
+    padding-right:4vw;
+  }
+  .header-logo {
+	font-size: 6vw;
+  }
+  .opening h1 {
+    width: 100%;
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 9vw;
+  }
+  .cleaning-services .divider {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cleaning-services .divider>div {
+  align-items: center;
+  }
+  .square-img {
+    height: 50vw;
+    width: 50vw;
+  }
+  .cleaning-services p {
+    text-align: center;
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+  }
+  .meet-our-team .profile-pic, .testimonials .profile-pic {
+    height: 50vw;
+    width: 50vw;
+  }
+  .meet-our-team .divider {
+    flex-direction: column;
+  }
+  .pricing-tables .divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-tables .icon {
+    height: 10vw;
+    width: 10vw;
+  }
+  .pricing-tables h4 {
+    font-size: 10vw;
+    margin: 0;
+  }
+  .latest-blog h4 {
+    font-size: 4vw;
+    margin: 0;
+  }
+  .blog-1, .blog-2, .blog-3 {
+    width: 100%;
+  }
+  .get-an-instant-quote-background .form-div {
+    margin: 10vw;
+  }
+  input {
+    padding: 1.5vw;
+    margin: 1vw;
+    font-size: 5vw;
+    font-weight: 300;
+    font-style: italic;
+    width: 50vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-div h1, footer h1 {
+    font-size: 6vw;
+  }
+  footer h2 {
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  article, header, footer  {
+  padding: 0 5vw;
+  }
+  .hidden-tablet {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  p {    
+    font-size: 2vw;
+    line-height: 4vw;
+  }  
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  button {
+    font-size: 2vw;
+    border-radius: 4vw;
+    padding-left: 4vw;
+    padding-right:4vw;
+  }
+  .header-logo {
+	font-size: 5vw;
+  }
+  .opening h1 {
+    width: 100%;
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 9vw;
+  }
+  .opening p {
+    width: 80%;
+  }
+  .cleaning-services .divider>div {
+  align-items: center;
+  }
+  .square-img {
+    height: 35vw;
+    width: 35vw;
+  }
+  .cleaning-services p {
+    text-align: center;
+  }
+  .meet-our-team h3 {
+    font-size: 2vw;
+  }
+  .meet-our-team .profile-pic {
+    height: 20vw;
+    width: 20vw;
+  }
+  .pricing-tables {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing-tables .divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+  }
+  .pricing-tables .icon {
+    height: 10vw;
+    width: 10vw;
+  }
+  .pricing-tables h4 {
+    font-size: 5vw;
+    margin: 0;
+  }
+  .latest-blog h4 {
+    font-size: 2vw;
+    margin: 0;
+  }
+  .blog-1, .blog-2, .blog-3 {
+    width: 100%;
+  }
+  .testimonials .profile-pic {
+    height: 35vw;
+    width: 35vw;
+  }
+  .get-an-instant-quote-background .form-div {
+    margin: 5vw 25vw;
+  }
+  input {
+    padding: 1.5vw;
+    margin: 1vw;
+    font-size: 2vw;
+    font-weight: 300;
+    font-style: italic;
+    width: 40vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-div h1, footer h1 {
+    font-size: 3vw;
+  }
+  footer h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: left;
+  }
+}
