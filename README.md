@@ -1,7 +1,7 @@
 # Project 1: Build a Responsive Website!
 Pick a design implemented in Adobe XD from the provided collection of designs.
 ## Getting started
-To see the website, click [here](https://saralaffin.github.io)
+To see the website, click [here](https://saralaffin.github.io/responsive-website/)
 ## Requirements
 The goal is to build an accurate clone of your chosen site. Do your best to get everything looking as similar as possible. Treat it like you were handed this mockup and given a deadline to deliver it. Use all the available resources you've been given - documentation, your peers, your instructors, placeholder images, etc.
 
